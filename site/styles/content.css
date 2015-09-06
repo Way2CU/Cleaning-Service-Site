@@ -193,3 +193,71 @@ form div.controls button {
 form div.controls button:hover {
 	background-color: #0073a2;
 }
+
+section.features {
+	display: block;
+	text-align: center;
+	padding:30px calc((100vw - 1200px) / 2);
+}
+
+section.features h2 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 20px;
+	text-align: center;
+	font-size: 3em;
+	font-weight: 300;
+	color: #0073a2;
+	width: 800px;
+}
+
+section.features article {
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 110px;
+	width: 50%;
+	position: relative;
+}
+
+section.features article:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -100px;
+    background-image: url(../images/sprite.svg);
+    background-position: -900px -25px;
+    background-size: 1600px 250px;
+    width: 200px;
+    height: 100px;
+}
+
+section.features article:first-of-type:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -100px;
+    background-image: url(../images/sprite.svg);
+    background-position: -1350px -25px;
+    background-size: 1691px 250px;
+    width: 200px;
+    height: 100px;
+}
+
+
+
+section.features article h3 {
+	display: block;
+	color: #0073a2;
+	font-size: 1.8em;
+}
+
+section.features article p {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.3em;
+	width: 70%;
+}
