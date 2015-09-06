@@ -20,6 +20,13 @@
 	src:url(../images/fonts/opensanshebrew-regular-webfont.woff) format('woff');
 }
 
+@font-face {
+    font-family: 'Open Sans Hebrew';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../images/fonts/opensanshebrew-bold-webfont.woff) format('woff');
+}
+
 body {
 	font-family: 'Open Sans Hebrew' serif;
 	background-color: white;
