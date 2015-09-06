@@ -428,3 +428,18 @@ section.about article:last-of-type p:nth-of-type(2):before {
 section.about article:last-of-type p:nth-of-type(3):before {
     background-position: -600px -160px;	
 }
+
+section.gallery_images {
+	display: block;
+	text-align: center;
+	padding:30px calc((100vw - 1200px) / 2);
+}
+
+section.gallery_images a {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	min-height: 240px;
+}
