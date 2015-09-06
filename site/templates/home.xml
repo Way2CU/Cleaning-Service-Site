@@ -58,5 +58,14 @@
 				</div>
 
 			</div>
+
+			<section class="features">
+				<cms:module
+					name="articles"
+					action="show_group"
+					text_id="features"
+					template="parts/feature_article_list.xml"
+				/>
+			</section>
 		</body>
 	</html>
