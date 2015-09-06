@@ -1,0 +1,7 @@
+<document>
+	<img 
+		src="$params['image']" 
+		alt=""
+		cms:eval="src,alt"
+		/>
+</document>
