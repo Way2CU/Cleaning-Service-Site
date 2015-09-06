@@ -5,6 +5,7 @@
 	<html lang="$language" cms:eval="lang">
 		<head>
 			<title><cms:text constant="site_title"/></title>
+			<cms:collection include="page_control,animation_chain"/>
 			<cms:module name="head_tag" action="print_tag"/>
 		</head>
 
@@ -29,6 +30,33 @@
 				</a>
 
 			</header>
+
+			<div class="gallery">
+
+				<cms:module
+					name="gallery"
+					action="show_image_list"
+					group="header_gallery"
+					template="parts/image.xml"
+					/>
+
+				<div class="gallery_controls">
+					<a href="javascript:void(0)"></a>
+					<a href="javascript:void(0)"></a>
+					<a href="javascript:void(0)"></a>
+					<a href="javascript:void(0)"></a>
+					<a href="javascript:void(0)"></a>
+				</div>	
+
+				<div class="form_wrap">
+					<h3><cms:text constant="form_title"/></h3>
+					<cms:module
+						name="contact_form"
+						action="show"
+						text_id="contact"
+						/>
+				</div>
+
+			</div>
 		</body>
 	</html>
-</document>
