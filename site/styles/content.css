@@ -247,8 +247,7 @@ section.features article:first-of-type:before {
 }
 
 
-
-section.features article h3 {
+section.features article h2 {
 	display: block;
 	color: #0073a2;
 	font-size: 1.8em;
@@ -260,4 +259,172 @@ section.features article p {
 	margin-right: auto;
 	font-size: 1.3em;
 	width: 70%;
+}
+
+section.textile {
+	display: block;
+	text-align: center;
+	padding:30px calc((100vw - 1200px) / 2);
+	background-image: url(../images/textile-background.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 1920px 1100px;
+	min-height: 1100px;
+}
+
+section.textile article {
+	display: block;
+	text-align: right;
+	margin-left: auto;
+	margin-right: auto;
+	width: 900px;
+	position: relative;
+}
+
+section.textile article:before {
+	content: '';
+	position: absolute;
+	top: 0px;
+	right: -20px;
+	width: 80%;
+	height: 70%;
+	border-top: 2px solid #0073a2;
+	border-right: 2px solid #0073a2;	
+}
+
+section.textile article:after {
+	content: '';
+	position: absolute;
+	bottom: 0px;
+	left: -20px;
+	width: 80%;
+	height: 70%;
+	border-bottom: 2px solid #0073a2;
+	border-left: 2px solid #0073a2;	
+}
+
+section.textile article h2 {
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 3em;
+	font-weight: 300;
+	color: #0073a2;	
+}
+
+section.textile article p {
+	display: block;
+	padding-bottom: 20px;
+	font-size: 1.2em;
+}
+
+section.about {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: -215px;
+    background-color: white;
+    width: 1200px;
+}
+
+section.about article:first-of-type {
+	display: block;
+	text-align: right;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	width: 900px;
+	position: relative;
+}
+
+section.about article:first-of-type:before {
+	content: '';
+	position: absolute;
+	top: 0px;
+	right: -20px;
+	width: 80%;
+	height: 70%;
+	border-top: 2px solid #0073a2;
+	border-right: 2px solid #0073a2;	
+}
+
+section.about article:first-of-type:after {
+	content: '';
+	position: absolute;
+	bottom: 0px;
+	left: -20px;
+	width: 80%;
+	height: 70%;
+	border-bottom: 2px solid #0073a2;
+	border-left: 2px solid #0073a2;	
+}
+
+section.about article:first-of-type h2 {
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 3em;
+	font-weight: 300;
+	color: #0073a2;		
+}
+
+section.about article:first-of-type p {
+	display: block;
+	padding-bottom: 20px;
+	font-size: 1.2em;	
+}
+
+section.about article:last-of-type {
+	display: block;
+	text-align: right;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+	position: relative;
+}
+
+section.about article:last-of-type h2 {
+	display: block;
+	text-align: center;
+	padding-bottom: 20px;
+	font-size: 3em;
+	font-weight: 300;
+	color: #0073a2;		
+}
+
+section.about article:last-of-type p {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 110px;
+    padding-bottom: 30px;
+    font-size: 1em;
+    width: 60%;
+    position: relative;
+}
+
+section.about article:last-of-type p:last-of-type {
+	padding-bottom: 0px;
+}
+
+section.about article:last-of-type p:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    right: 0px;
+    background-image: url(../images/sprite.svg);
+    background-position: -400px -160px;
+    background-size: 1600px 250px;
+    width: 100px;
+    height: 100px;
+}
+
+section.about article:last-of-type p:nth-of-type(2):before {
+    background-position: -500px -160px;	
+}
+
+section.about article:last-of-type p:nth-of-type(3):before {
+    background-position: -600px -160px;	
 }
