@@ -113,5 +113,29 @@
 					<span><cms:text constant="copyright"/></span>
 				</div>									
 			</footer>
+
+			<div class="menu">
+				<div class="container">
+					<div class="menu_form">
+						<h3><cms:text constant="form_title"/></h3>
+						<cms:module
+							name="contact_form"
+							action="show"
+							text_id="contact"
+							/>
+					</div>		
+
+						<a
+							href="'tel:'.urlencode(Language::getText('phone'))"
+							cms:eval="href"
+							class="phone"
+							>
+							<cms:text constant="phone"/>
+							<cms:svg file="../images/phone-circle.svg"/>
+
+						</a>
+						<span class="logo"></span>
+				</div>				
+			</div>
 		</body>
 	</html>
