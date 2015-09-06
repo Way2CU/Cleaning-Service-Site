@@ -67,5 +67,51 @@
 					template="parts/feature_article_list.xml"
 				/>
 			</section>
+
+			<section class="textile">
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="textile"
+					template="parts/article.xml"
+					/>
+			</section>
+
+			<section class="about">
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="cloth_article"
+					template="parts/article.xml"
+					/>
+
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="about"
+					template="parts/article.xml"
+					/>	
+			</section>
+
+			<section class="gallery_images">
+				<cms:module
+					name="gallery"
+					action="show_image_list"
+					group="gallery_images"
+					template="parts/image.xml"
+					/>
+			</section>
+
+			<footer>
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="footer_article"
+					template="parts/footer_article.xml"
+					/>
+				<div class="copyright" >
+					<span><cms:text constant="copyright"/></span>
+				</div>									
+			</footer>
 		</body>
 	</html>
