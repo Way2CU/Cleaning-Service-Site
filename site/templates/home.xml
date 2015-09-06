@@ -98,7 +98,7 @@
 					name="gallery"
 					action="show_image_list"
 					group="gallery_images"
-					template="parts/image.xml"
+					template="parts/gallery_images.xml"
 					/>
 			</section>
 
