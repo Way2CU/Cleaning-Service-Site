@@ -1,0 +1,85 @@
+/**
+ * Header Style Sheet
+ * Home Cleaning Service-Site
+ *
+ * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Authors:Tal Reznic
+ */
+
+header {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: calc(1200px - 65px);
+    position: relative;
+
+}
+
+header span.logo {
+	position:absolute;
+	top:50%;
+	margin-top:-65.5px;
+	right:0px;
+	background-image: url(../images/sprite.svg);
+	background-repeat: no-repeat;
+	background-position: -350px 0px;
+	background-size: 1400px 218px;
+	width: 350px;
+	height: 131px;
+}
+
+header article {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+}
+
+header article h1 {
+	display: block;
+	font-weight: 400;
+	font-size: 3.5em;
+}
+
+header article p {
+	display: block;
+	font-weight: 400;
+	font-size: 1.3em;
+}
+
+header a.phone {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-right: 20px;
+    padding-left: 20px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    margin-top: -36.5px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #1e477a;
+    border-radius: 8px;
+    font-size: 2em;
+    font-weight: 700;
+    transition:all 0.3s;
+}
+
+header a.phone:hover {
+	background-color: #0073a2;
+}
+
+header a.phone svg {
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 5px;
+	width: 35px;
+	height: 35px;
+}
+
+header a.phone svg path {
+	fill:white;
+} 
