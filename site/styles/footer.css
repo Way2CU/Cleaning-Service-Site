@@ -76,3 +76,16 @@ footer div.copyright span a {
 footer div.copyright span a:hover {
 	color:#5bc2d8;
 }
+
+@media all and (max-width: 1024px) and (min-width: 768px){
+
+footer article {
+    display: block;
+    padding-top: 200px;
+    background-image: url(../images/footer-background.jpg);
+    background-repeat: no-repeat;
+    background-position: -550px 0px;
+    background-size: 1920px 700px;
+    min-height: 500px;
+}	
+}

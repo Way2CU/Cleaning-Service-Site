@@ -596,3 +596,51 @@ section.gallery_images a {
 	position: relative;
 }
 
+@media all and (max-width: 1024px) and (min-width: 768px){
+header{
+	width: auto;
+
+}
+
+header span.logo {
+    position: absolute;
+    top: 50%;
+    margin-top: -65.5px;
+    right: 0px;
+    background-image: url(../images/sprite.svg);
+    background-repeat: no-repeat;
+    background-position: -305px 0px;
+    background-size: 1170px 218px;
+    width: 279px;
+    height: 131px;
+}
+
+header article h1 {
+    display: block;
+    font-weight: 400;
+    font-size: 3.2em;
+}
+
+header a.phone {
+	font-size: 1.4em;
+}
+
+section.about {
+	width: auto;
+}
+
+div.menu div.container {
+	width: auto;
+}
+
+section.about article:last-of-type {
+	width: auto;
+}
+
+div.menu.active {
+	opacity: 0;
+	visibility: hidden;
+}
+
+}
+
