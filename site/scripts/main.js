@@ -52,6 +52,8 @@ Site.on_load = function() {
 	if (Site.is_mobile())
 		Site.mobile_menu = new Caracal.MobileMenu();
 
+	Caracal.lightbox = new LightBox('a.image.direct', false, false, true);
+
 	Site.header_slider = new PageControl('div.gallery','img');
 	Site.header_slider
 		.attachControls($('div.gallery_controls a'))
