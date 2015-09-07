@@ -587,19 +587,31 @@ section.gallery_images {
 }
 
 section.gallery_images a {
-	display: inline-block;
-	vertical-align: middle;
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-bottom: 10px;
-	min-height: 240px;
-	position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    width: 350px;
+    height: 230px;
+    position: relative;
+    overflow: hidden;
+    transition:all 0.3s;
 }
+
+section.gallery_images a:hover img {
+	transform:scale(1.1);
+}
+
+section.gallery_images a img {
+	display: block;
+	transition:all 0.3s;
+}
+
 
 @media all and (max-width: 1024px) and (min-width: 768px){
 header{
 	width: auto;
-
 }
 
 header span.logo {
