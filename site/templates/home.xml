@@ -155,6 +155,7 @@
 					<span><cms:text constant="copyright"/></span>
 				</div>									
 			</footer>
+			
 			<!-- Floating Menu Desktop Version -->
 			<cms:desktop>
 				<div class="menu">
