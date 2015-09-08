@@ -5,7 +5,7 @@ site:
   root: httpdocs
   username: "shitvaerev_lewis"
   caracal_branch: develop
-  # ip_address: 198.251.79.73
+  ip_address: 198.251.79.73
   # owner: Some Person
   # plan: Unlimited
 
