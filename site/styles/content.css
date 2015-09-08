@@ -147,6 +147,7 @@ form label:first-of-type input {
 
 form label:last-of-type input {
 	border-radius: 8px 0px 0px 8px;
+	border-left:1px solid #0073a2;
 }
 
 form label input:hover {
@@ -184,8 +185,8 @@ form div.controls {
 form div.controls button {
 	padding-top: 20px;
 	padding-bottom: 20px;
-	padding-right: 40px;
-	padding-left: 40px;
+	padding-right: 25px;
+	padding-left: 25px;
 	border:none;
 	color:white;
 	border:none;
@@ -494,8 +495,9 @@ div.menu div.container {
 
 div.container div.menu_form {
 	display: inline-block;
-	vertical-align: bottom;
+	vertical-align: middle;
 	text-align: right;
+	line-height: 100%;
 }
 
 div.container div.menu_form h3 {
@@ -573,12 +575,13 @@ div.container a.phone {
     padding-top: 16px;
     padding-bottom: 16px;
     margin-right: 10px;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 25px;
+    padding-left: 25px;
     border: none;
     color: white;
     font-size: 1.1em;
     font-weight: 400;
+    line-height: 100%;
     text-decoration: none;
     border-radius: 8px;
     border: 1px solid #0073a2;
@@ -606,7 +609,7 @@ div.container a.phone svg path {
 
 div.container span.logo {
     display: inline-block;
-    vertical-align: bottom;
+    vertical-align: middle;
     background-image: url(../images/sprite.svg);
     background-repeat: no-repeat;
     background-position: -200px 0px;
