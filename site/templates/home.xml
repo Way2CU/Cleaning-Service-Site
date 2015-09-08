@@ -118,30 +118,21 @@
 					template="parts/article.xml"
 					/>	
 			</section>
-			<cms:desktop>
-				<section class="gallery_images">
-					<cms:module
-						name="gallery"
-						action="show_image_list"
-						group="gallery_images"
-						template="parts/gallery_images.xml"
-						/>
-				</section>
-			</cms:desktop>
+
+			<section class="gallery_images">
+				<cms:module
+					name="gallery"
+					action="show_image_list"
+					group="gallery_images"
+					template="parts/gallery_images.xml"
+					/>
+			</section>
 
 			<cms:mobile>
-				<section class="gallery_images">
-					<div class="scroll">
-						<div class="images_wrap">						
-							<cms:module
-								name="gallery"
-								action="show_image_list"
-								group="gallery_images"
-								template="parts/gallery_images.xml"
-								/>
-						</div>
-					</div>
-				</section>
+				<div class="gallery_mobile_controls">
+					<a href="javascript:void(0)" class="previous"></a>
+					<a href="javascript:void(0)" class="next"></a>
+				</div>
 			</cms:mobile>
 
 			<footer>
@@ -155,7 +146,7 @@
 					<span><cms:text constant="copyright"/></span>
 				</div>									
 			</footer>
-			
+
 			<!-- Floating Menu Desktop Version -->
 			<cms:desktop>
 				<div class="menu">
