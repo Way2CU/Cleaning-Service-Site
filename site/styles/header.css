@@ -19,28 +19,29 @@ header {
 }
 
 header span.logo {
-    position:absolute;
-    top:50%;
-    margin-top:-65.5px;
-    right:0px;
+    position: absolute;
+    top: 50%;
+    margin-top: -55px;
+    right: 0px;
     background-image: url(../images/sprite.svg);
     background-repeat: no-repeat;
     background-position: -350px 0px;
-    background-size: 1400px 218px;
+    background-size: 1400px 180px;
     width: 350px;
-    height: 131px;
+    height: 110px
 }
 
 header article {
-	display: inline-block;
-	vertical-align: middle;
-	text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 2.2em;
 }
 
 header article h1 {
 	display: block;
 	font-weight: 400;
-	font-size: 3em;
+	font-size: 2.3em;
 }
 
 header article p {
@@ -65,6 +66,7 @@ header a.phone {
     border-radius: 8px;
     font-size: 2em;
     font-weight: 700;
+    line-height: 100%;    
     transition:all 0.3s;
 }
 

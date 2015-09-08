@@ -6,156 +6,7 @@
  * Authors:Tal Reznic
  */
 
- /*Floating Menu*/
 
-div.menu {
-	position: fixed;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	top: 0px;
-	left: 0px;
-	width: 100%;
-	display: block;
-	text-align: center;
-	background-color: white;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.31);
-    opacity: 0;
-    visibility: hidden;
-    transition:all 0.3s;
-}
-
-div.menu.active {
-	opacity: 1;
-	visibility: visible;
-}
-
-div.menu div.container {
-    display: block;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;	
-}
-
-div.container div.menu_form {
-	display: inline-block;
-	vertical-align: bottom;
-	text-align: right;
-}
-
-div.container div.menu_form h3 {
-    display: block;
-    text-align: right;
-    padding-bottom: 10px;
-    color: #231f20;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 100%;
-}
-
-div.container div.menu_form form label:first-of-type:before {
-    content: "";
-    position: absolute;
-    top: 10px;
-    right: -5px;
-    background-image: url(../images/sprite.svg);
-    background-repeat: no-repeat;
-    background-position: -225px -165px;
-    background-size: 1500px 234px;
-    width: 35px;
-    height: 35px;	
-}
-
-div.container div.menu_form form label:nth-of-type(2):before {
-    content: "";
-    position: absolute;
-    top: 10px;
-    right: -5px;
-    background-image: url(../images/sprite.svg);
-    background-repeat: no-repeat;
-    background-position: -130px -165px;
-    background-size: 1500px 234px;
-    width: 35px;
-    height: 35px;	
-}
-
-div.container div.menu_form form label:last-of-type:before {
-    content: "";
-    position: absolute;
-    top: 10px;
-    right: -5px;
-    background-image: url(../images/sprite.svg);
-    background-repeat: no-repeat;
-    background-position: -35px -165px;
-    background-size: 1500px 234px;
-    width: 35px;
-    height: 35px;	
-}
-
-div.container div.menu_form form input {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 40px;
-    border: 1px solid #0073a2;
-    border-left: none;
-    color: #231f20;
-    background-color: rgba(255, 255, 255, 0.70);
-    transition: all 0.3s;
-    width: calc(200px - 35px);
-    font-size: 1em;
-}
-
-div.container div.menu_form form div.controls button {
-	font-size: 1em;
-}
-
-div.container a.phone {
-	display: inline-block;
-    vertical-align: bottom;
-    padding-top: 17px;
-    padding-bottom: 17px;
-    margin-right: 10px;
-    padding-right: 30px;
-    padding-left: 30px;
-    border: none;
-    color: white;
-    font-size: 1.1em;
-    font-weight: 400;
-    text-decoration: none;
-    border-radius: 8px;
-    border: 1px solid #0073a2;
-    background-color: #1e477a;
-    transition: all 0.3s;
-    cursor: pointer;
-    font-weight: 700;
-}
-
-div.container a.phone:hover {
-	background-color: #0073a2;
-}
-
-div.container a.phone svg {
-	display: inline-block;
-	vertical-align: middle;
-	padding-right: 5px;
-	width: 25px;
-	height: 25px;
-}
-
-div.container a.phone svg path {
-	fill:white;
-}
-
-div.container span.logo {
-    display: inline-block;
-    vertical-align: bottom;
-    background-image: url(../images/sprite.svg);
-    background-repeat: no-repeat;
-    background-position: -200px 0px;
-    background-size: 800px 125px;
-    width: 200px;
-    height: 65px;
-}	
 
  div.gallery {
     display: block;
@@ -296,6 +147,10 @@ form label:first-of-type input {
 	border-radius: 0px 8px 8px 0px;
 }
 
+form label:last-of-type input {
+	border-radius: 8px 0px 0px 8px;
+}
+
 form label input:hover {
 	background-color: rgba(255, 255, 255, 0.85);
 }
@@ -325,6 +180,7 @@ form label input:focus {
 form div.controls {
 	display: inline-block;
 	vertical-align: middle;
+	margin-right: 10px;
 }
 
 form div.controls button {
@@ -334,7 +190,8 @@ form div.controls button {
 	padding-left: 40px;
 	border:none;
 	color:white;
-	border-radius: 8px 0px 0px 8px;
+	border:none;
+	border-radius: 8px;
 	border:1px solid  #0073a2;
   	background-color: #1abc9c;
 	transition:all 0.3s;
@@ -607,6 +464,166 @@ section.gallery_images a img {
 	display: block;
 	transition:all 0.3s;
 }
+
+div.menu {
+	position: fixed;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	display: block;
+	text-align: center;
+	background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.31);
+    opacity: 0;
+    visibility: hidden;
+    transition:all 0.3s;
+}
+
+div.menu.active {
+	opacity: 1;
+	visibility: visible;
+}
+
+div.menu div.container {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;	
+}
+
+div.container div.menu_form {
+	display: inline-block;
+	vertical-align: bottom;
+	text-align: right;
+}
+
+div.container div.menu_form h3 {
+    display: block;
+    text-align: right;
+    padding-bottom: 10px;
+    color: #231f20;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+div.container div.menu_form form label:first-of-type:before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -5px;
+    background-image: url(../images/sprite.svg);
+    background-repeat: no-repeat;
+    background-position: -225px -165px;
+    background-size: 1500px 234px;
+    width: 35px;
+    height: 35px;	
+}
+
+div.container div.menu_form form label:nth-of-type(2):before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -5px;
+    background-image: url(../images/sprite.svg);
+    background-repeat: no-repeat;
+    background-position: -130px -165px;
+    background-size: 1500px 234px;
+    width: 35px;
+    height: 35px;	
+}
+
+div.container div.menu_form form label:last-of-type:before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -5px;
+    background-image: url(../images/sprite.svg);
+    background-repeat: no-repeat;
+    background-position: -35px -165px;
+    background-size: 1500px 234px;
+    width: 35px;
+    height: 35px;	
+}
+
+div.container div.menu_form form label input {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    color: #231f20;
+    background-color: rgba(255, 255, 255, 0.70);
+    transition: all 0.3s;
+    width: calc(200px - 35px);
+    font-size: 1em;
+}
+
+div.container div.menu_form form label input:first-of-type {
+	border-right: 1px solid #0073a2;	
+}
+
+div.container div.menu_form form label input:nth-of-type(2) {
+    border-left: 0px solid #0073a2;
+    border-right: 0px solid #0073a2;
+}
+
+div.container div.menu_form form label input:last-of-type {
+    border-left: 1px solid #0073a2;
+}
+
+div.container div.menu_form form div.controls button {
+	font-size: 1em;
+}
+
+div.container a.phone {
+    display: inline-block;
+    vertical-align: bottom;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-right: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border: none;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid #0073a2;
+    background-color: #1e477a;
+    transition: all 0.3s;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+div.container a.phone:hover {
+	background-color: #0073a2;
+}
+
+div.container a.phone svg {
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 5px;
+	width: 25px;
+	height: 25px;
+}
+
+div.container a.phone svg path {
+	fill:white;
+}
+
+div.container span.logo {
+    display: inline-block;
+    vertical-align: bottom;
+    background-image: url(../images/sprite.svg);
+    background-repeat: no-repeat;
+    background-position: -200px 0px;
+    background-size: 800px 125px;
+    width: 200px;
+    height: 65px;
+}	
 
 
 @media all and (max-width: 1024px) and (min-width: 768px){
