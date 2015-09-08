@@ -3,7 +3,7 @@ site:
   domain: shtivaerev.co.il
   make_alias: false
   root: httpdocs
-  username: "shitvaerev_lewis"
+  username: "shitvaerev"
   caracal_branch: develop
   ip_address: 198.251.79.73
   # owner: Some Person
