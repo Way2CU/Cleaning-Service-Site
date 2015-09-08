@@ -96,6 +96,8 @@ Site.on_load = function() {
 	if (Site.is_mobile())
 		Site.mobile_menu = new Caracal.MobileMenu();
 
+	if(!Site.is_mobile()) {
+
 	Caracal.lightbox = new LightBox('a.image.direct', false, false, true);
 
 	Site.header_slider = new PageControl('div.gallery','img');
@@ -107,7 +109,7 @@ Site.on_load = function() {
 
 	// create function for positioning fixed menu 
 	Site.menu =new FloatingMenu($('div.menu'),$('section.features'));
-
+	}
 
 };
 
