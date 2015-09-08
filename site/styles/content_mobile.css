@@ -390,33 +390,63 @@ section.about article:last-of-type p:nth-of-type(3):before {
 
 section.gallery_images {
 	display: block;
+    text-align: center;
+    position: relative;
+    min-height: 250px;
+}
+
+section.gallery_images a {
+	position: absolute;
+	top:0px;
+	left:50%;
+	margin-left:-150px;
+	width:300px;
+	opacity: 0;
+	transition:all 0.3s; 
+}
+
+section.gallery_images a.visible {
+	opacity: 1;
+}
+
+div.gallery_mobile_controls {
+	display: block;
+	margin-bottom: 20px;
 	text-align: center;
 }
 
-section.gallery_images div.scroll {
-	display: block;
-	overflow-x: scroll;
-	direction: ltr;	
+div.gallery_mobile_controls a.next {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 50px;
+    width: 30px;
+    height: 30px;
+    border: 0px solid #0073A2;
+    border-left-width: 5px;
+    border-bottom-width: 5px;
+    -webkit-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, .5));
+    -moz-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, .5));
+    -o-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, .5));
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, .5));
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
-section.gallery_images div.scroll div.images_wrap {
-	display: block;
-	width: 4200px;
-}
-
-section.gallery_images div.scroll div.images_wrap a {
+div.gallery_mobile_controls a.previous {
     display: inline-block;
-    vertical-align: middle;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-    width: 300px;
-    height: 230px;
-}
-
-section.gallery_images div.scroll div.images_wrap a img {
-	width:100%;
-	height: auto;
+	vertical-align: top;
+	margin-left: 50px;	
+    width: 30px;
+    height: 30px;
+    border: 0px solid #0073A2;
+    border-right-width: 5px;
+    border-top-width: 5px;
+    -webkit-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, .5));
+    -moz-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, .5));
+    -o-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, .5));
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, .5));
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 
