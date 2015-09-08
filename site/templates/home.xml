@@ -30,23 +30,49 @@
 				</a>
 
 			</header>
+			<!-- slider Gallery desktop Version -->
+			<cms:desktop>
+				<div class="gallery">
+				
+					<cms:module
+						name="gallery"
+						action="show_image_list"
+						group="header_gallery"
+						template="parts/image.xml"
+						/>
 
-			<div class="gallery">
+					<div class="gallery_controls">
+						<a href="javascript:void(0)"></a>
+						<a href="javascript:void(0)"></a>
+						<a href="javascript:void(0)"></a>
+						<a href="javascript:void(0)"></a>
+						<a href="javascript:void(0)"></a>
+					</div>	
 
-				<cms:module
-					name="gallery"
-					action="show_image_list"
-					group="header_gallery"
-					template="parts/image.xml"
-					/>
+					<div class="form_wrap">
+						<h3><cms:text constant="form_title"/></h3>
+						<cms:module
+							name="contact_form"
+							action="show"
+							text_id="contact"
+							/>
+					</div>
 
-				<div class="gallery_controls">
-					<a href="javascript:void(0)"></a>
-					<a href="javascript:void(0)"></a>
-					<a href="javascript:void(0)"></a>
-					<a href="javascript:void(0)"></a>
-					<a href="javascript:void(0)"></a>
-				</div>	
+				</div>
+			</cms:desktop>
+			<!-- Slider gallery mobile Version -->
+			<cms:mobile>
+
+				<div class="gallery">
+					<cms:module
+						name="gallery"
+						action="show_image_list"
+						group="header_gallery"
+						template="parts/image.xml"
+						limit="1"
+						random="1"
+						/>
+				</div>
 
 				<div class="form_wrap">
 					<h3><cms:text constant="form_title"/></h3>
@@ -57,7 +83,7 @@
 						/>
 				</div>
 
-			</div>
+			</cms:mobile>
 
 			<section class="features">
 				<cms:module
@@ -92,15 +118,31 @@
 					template="parts/article.xml"
 					/>	
 			</section>
+			<cms:desktop>
+				<section class="gallery_images">
+					<cms:module
+						name="gallery"
+						action="show_image_list"
+						group="gallery_images"
+						template="parts/gallery_images.xml"
+						/>
+				</section>
+			</cms:desktop>
 
-			<section class="gallery_images">
-				<cms:module
-					name="gallery"
-					action="show_image_list"
-					group="gallery_images"
-					template="parts/gallery_images.xml"
-					/>
-			</section>
+			<cms:mobile>
+				<section class="gallery_images">
+					<div class="scroll">
+						<div class="images_wrap">						
+							<cms:module
+								name="gallery"
+								action="show_image_list"
+								group="gallery_images"
+								template="parts/gallery_images.xml"
+								/>
+						</div>
+					</div>
+				</section>
+			</cms:mobile>
 
 			<footer>
 				<cms:module
@@ -113,29 +155,31 @@
 					<span><cms:text constant="copyright"/></span>
 				</div>									
 			</footer>
+			<!-- Floating Menu Desktop Version -->
+			<cms:desktop>
+				<div class="menu">
+					<div class="container">
+						<div class="menu_form">
+							<h3><cms:text constant="form_title"/></h3>
+							<cms:module
+								name="contact_form"
+								action="show"
+								text_id="contact"
+								/>
+						</div>		
 
-			<div class="menu">
-				<div class="container">
-					<div class="menu_form">
-						<h3><cms:text constant="form_title"/></h3>
-						<cms:module
-							name="contact_form"
-							action="show"
-							text_id="contact"
-							/>
-					</div>		
+							<a
+								href="'tel:'.urlencode(Language::getText('phone'))"
+								cms:eval="href"
+								class="phone"
+								>
+								<cms:text constant="phone"/>
+								<cms:svg file="../images/phone-circle.svg"/>
 
-						<a
-							href="'tel:'.urlencode(Language::getText('phone'))"
-							cms:eval="href"
-							class="phone"
-							>
-							<cms:text constant="phone"/>
-							<cms:svg file="../images/phone-circle.svg"/>
-
-						</a>
-						<span class="logo"></span>
-				</div>				
-			</div>
+							</a>
+							<span class="logo"></span>
+					</div>				
+				</div>
+			</cms:desktop>
 		</body>
 	</html>
