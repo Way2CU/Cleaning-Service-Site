@@ -18,6 +18,19 @@ header {
 
 }
 
+header span.logo {
+    position:absolute;
+    top:50%;
+    margin-top:-65.5px;
+    right:0px;
+    background-image: url(../images/sprite.svg);
+    background-repeat: no-repeat;
+    background-position: -350px 0px;
+    background-size: 1400px 218px;
+    width: 350px;
+    height: 131px;
+}
+
 header article {
 	display: inline-block;
 	vertical-align: middle;
