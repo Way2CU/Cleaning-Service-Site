@@ -1,0 +1,81 @@
+/**
+ * Header mobile Style Sheet
+ * Cleaning Services Site
+ *
+ * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Authors:Tal Reznic
+ */
+
+ header {
+    display: block;
+    padding-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+header span.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../images/sprite.svg);
+    background-repeat: no-repeat;
+    background-position: -260px 0px;
+    background-size: 1065px 170px;
+    width: 260px;
+    height: 100px;
+}
+
+header article {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	text-align: center;
+	width: 95%;
+}
+
+header article h1 {
+	display: block;
+	font-weight: 400;
+	font-size: 2.5em;
+}
+
+header article p {
+	display: block;
+	font-weight: 400;
+	font-size: 1em;
+}
+
+header a.phone {
+	display: inline-block;
+	margin-left: 40px;
+	margin-right: 40px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #1e477a;
+    border-radius: 8px;
+    font-size: 1.6em;
+    font-weight: 700;
+    transition:all 0.3s;
+}
+
+header a.phone:hover {
+	background-color: #0073a2;
+}
+
+header a.phone svg {
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 5px;
+	width: 30px;
+	height: 30px;
+}
+
+header a.phone svg path {
+	fill:white;
+} 
