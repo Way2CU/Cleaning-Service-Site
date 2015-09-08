@@ -1,7 +1,7 @@
 <document>
 	<img 
 		src="$params['image']" 
-		alt=""
+		alt="$params['title'][$language]"
 		cms:eval="src,alt"
 		/>
 </document>
