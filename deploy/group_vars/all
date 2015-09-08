@@ -1,11 +1,11 @@
 ---
 site:
-  domain: sample.com
+  domain: shtivaerev.co.il
   make_alias: false
   root: httpdocs
-  username: "sample"
+  username: "shitvaerev_lewis"
   caracal_branch: develop
-  # ip_address: 0.0.0.0
+  # ip_address: 198.251.79.73
   # owner: Some Person
   # plan: Unlimited
 
