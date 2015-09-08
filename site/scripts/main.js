@@ -93,10 +93,17 @@ function FloatingMenu(menu, trigger_element){
  * Function called when document and images have been completely loaded.
  */
 Site.on_load = function() {
-	if (Site.is_mobile())
-		Site.mobile_menu = new Caracal.MobileMenu();
 
-	if(!Site.is_mobile()) {
+	if (Site.is_mobile()){ 
+		Site.mobile_menu = new Caracal.MobileMenu();
+		// function for switching between mobile gallery images
+		Site.mobile_gallery = new PageControl('section.gallery_images','a.image.direct');
+		Site.mobile_gallery
+			.attachPreviousControl($('div.gallery_mobile_controls a.previous'))
+			.attachPreviousControl($('div.gallery_mobile_controls a.next'))
+			.setPauseOnHover(false)
+			.setWrapAround(true);		
+	}	
 
 	Caracal.lightbox = new LightBox('a.image.direct', false, false, true);
 
@@ -109,7 +116,6 @@ Site.on_load = function() {
 
 	// create function for positioning fixed menu 
 	Site.menu =new FloatingMenu($('div.menu'),$('section.features'));
-	}
 
 };
 
