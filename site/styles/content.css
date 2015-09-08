@@ -289,7 +289,7 @@ form label input {
 	border-left: none;
 	color: #231f20;
 	background-color: rgba(255, 255, 255, 0.70);
-	transition:all 0.3s
+	transition:all 0.3s;
 }
 
 form label:first-of-type input {
@@ -478,6 +478,16 @@ section.about {
     margin-top: -215px;
     background-color: white;
     width: 1200px;
+}
+
+section.about article:first-of-type {
+	display: block;
+	text-align: right;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+	width: 900px;
+	position: relative;
 }
 
 section.about article:first-of-type:before {
