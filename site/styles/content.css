@@ -513,8 +513,8 @@ div.container div.menu_form h3 {
 div.container div.menu_form form label:first-of-type:before {
     content: "";
     position: absolute;
-    top: 10px;
-    right: -5px;
+    top: 8px;
+    right: -2px;
     background-image: url(../images/sprite.svg);
     background-repeat: no-repeat;
     background-position: -225px -165px;
@@ -526,8 +526,8 @@ div.container div.menu_form form label:first-of-type:before {
 div.container div.menu_form form label:nth-of-type(2):before {
     content: "";
     position: absolute;
-    top: 10px;
-    right: -5px;
+    top: 8px;
+    right: -2px;
     background-image: url(../images/sprite.svg);
     background-repeat: no-repeat;
     background-position: -130px -165px;
@@ -539,14 +539,14 @@ div.container div.menu_form form label:nth-of-type(2):before {
 div.container div.menu_form form label:last-of-type:before {
     content: "";
     position: absolute;
-    top: 10px;
-    right: -5px;
+    top: 8px;
+    right: -2px;
     background-image: url(../images/sprite.svg);
     background-repeat: no-repeat;
     background-position: -35px -165px;
     background-size: 1500px 234px;
     width: 35px;
-    height: 35px;	
+    height: 35px;
 }
 
 div.container div.menu_form form label input {
