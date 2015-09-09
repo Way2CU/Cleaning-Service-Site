@@ -560,18 +560,10 @@ div.container div.menu_form form label input {
     font-size: 1em;
 }
 
-div.container div.menu_form form label input:first-of-type {
-	border-right: 1px solid #0073a2;	
+div.container div.menu_form form label:last-of-type input {
+	border-left: 1px solid #0073a2;
 }
 
-div.container div.menu_form form label input:nth-of-type(2) {
-    border-left: 0px solid #0073a2;
-    border-right: 0px solid #0073a2;
-}
-
-div.container div.menu_form form label input:last-of-type {
-    border-left: 1px solid #0073a2;
-}
 
 div.container div.menu_form form div.controls button {
 	font-size: 1em;
