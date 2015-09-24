@@ -154,7 +154,6 @@
 						
 						<span class="logo"></span>
 						<div class="menu_form">
-							<h3><cms:text constant="form_title"/></h3>
 							<cms:module
 								name="contact_form"
 								action="show"
