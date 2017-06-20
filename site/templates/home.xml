@@ -34,7 +34,7 @@
 			<!-- slider Gallery desktop Version -->
 			<cms:desktop>
 				<div class="gallery">
-				
+
 					<cms:module
 						name="gallery"
 						action="show_image_list"
@@ -48,7 +48,7 @@
 						<a href="javascript:void(0)"></a>
 						<a href="javascript:void(0)"></a>
 						<a href="javascript:void(0)"></a>
-					</div>	
+					</div>
 
 					<div class="form_wrap">
 						<h3><cms:text constant="form_title"/></h3>
@@ -117,7 +117,7 @@
 					action="show"
 					text_id="about"
 					template="parts/article.xml"
-					/>	
+					/>
 			</section>
 
 			<section class="gallery_images">
@@ -125,6 +125,7 @@
 					name="gallery"
 					action="show_image_list"
 					group="gallery_images"
+					order_by="text_id"
 					template="parts/gallery_images.xml"
 					/>
 			</section>
@@ -145,14 +146,14 @@
 					/>
 				<div class="copyright" >
 					<span><cms:text constant="copyright"/></span>
-				</div>									
+				</div>
 			</footer>
 
 			<!-- Floating Menu Desktop Version -->
 			<cms:desktop>
 				<div class="menu">
 					<div class="container">
-						
+
 						<span class="logo"></span>
 						<div class="menu_form">
 							<cms:module
@@ -160,7 +161,7 @@
 								action="show"
 								text_id="contact"
 								/>
-						</div>		
+						</div>
 
 						<a
 							href="'tel:'.urlencode(Language::getText('phone'))"
@@ -171,7 +172,7 @@
 							<cms:svg file="../images/phone-circle.svg"/>
 
 						</a>
-					</div>				
+					</div>
 				</div>
 			</cms:desktop>
 		</body>
